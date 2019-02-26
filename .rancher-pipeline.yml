@@ -6,4 +6,8 @@ stages:
       buildContext: .
       tag: test
       registry: 127.0.0.1:34111
+- name: sub
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
