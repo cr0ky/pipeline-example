@@ -1,0 +1,9 @@
+stages:
+- name: comp
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: test
+      registry: 127.0.0.1:34111
+timeout: 60
